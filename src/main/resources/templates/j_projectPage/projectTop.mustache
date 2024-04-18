@@ -1,0 +1,16 @@
+{{>headerfooter/header}}
+
+<!--프로젝트 전체 wrap-->
+<div id="j_projectWrap">
+    <!--사이드바-->
+    <div id="j_projectSideWrap">
+        <ul id="j_pjMainSide">
+            <li> <a href="/projectPage/"> 수주내역 보기</a> </li>
+            <li> <a onclick="managerCheck('/projectPage/insert')">프로젝트 등록 </a> </li>
+            <li><a onclick="managerCheck('/projectPage/perform')"> 평가 관리 </a></li>
+            <li> <a href="/sales/list">파견업무 관리</a></li>
+        </ul>
+    </div>
+
+    <!--================ main 구역 =================-->
+    <div id="projectMainView">

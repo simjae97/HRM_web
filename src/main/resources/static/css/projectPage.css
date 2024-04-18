@@ -1,0 +1,119 @@
+
+
+#j_projectWrap{
+    width: 960px;
+    height: 550px;
+    /*border: 1px red solid;*/
+    display: flex;
+}
+#j_projectSideWrap{
+    width: 150px;
+    border : 1px solid #e8e8e8;
+    height: 550px;
+    margin-right: 20px;
+}
+
+#j_projectSideWrap > ul{
+    margin-top: 10px;
+    font-size: 20px;
+}
+#j_projectSideWrap > ul > li{
+    margin-top: 20px;
+    margin-left:10px
+}
+#j_pjMainSide{
+    margin: 0px auto;
+    margin-right: 30px;
+    padding: 0;
+    width: 130px;
+    color: black;
+    margin-left: 10px;
+}
+.searchPrice{
+    width : 100px;
+}
+
+#projectMainView{
+    margin: 0 auto;
+    margin-top: 10px;
+    min-width:750px;
+    height:550px;
+}
+
+#insertProjectData{
+    width: 400px;
+    margin: 0 auto; 
+    font-size: 16px;
+}
+
+#insertProjectData span{
+    text-align: left;
+}
+#insertProjectData >.insertPjDate input{
+    margin-left: 10px;
+}
+#insertProjectData >.insertPjmcount input{
+    width: 50px;
+    margin-left: 10px;
+}
+#insertProjectData .insert_title ,.insert_compannyname,.insert_price{
+    width: 180px;
+}
+#insertProjectData textarea{
+    width: 295px;
+}
+#insertProjectData .insert_price{
+    width: 180px;
+}
+#insertProjectData .insertPjState span{
+    display: block;
+}
+#insertProjectData .insertPjState{
+    display: flex;
+    width: 300px;
+    padding-left: 39px;
+}
+#insertProjectData .insertPjState select{
+    margin-left: 10px;
+}
+#insertProjectData .insertPjText span{
+    display: block;
+
+}
+#insertProjectData .insertPjText input{
+    margin-left: 10px;
+}
+#insertProjectData .insertPjPrice input{
+    margin-left: 10px;
+}
+#insertProjectData .insertPjText{
+    display: flex;
+    width: 300px;
+}
+#insertProjectData div{
+    margin-top: 5px;
+    align-items: center;
+}
+#insertProjectData .insertPjPrice{
+    display: flex;
+    margin-top: 15px;
+}
+#insertProjectData .insertPjCname{
+    padding-left: 39px;
+} 
+#insertProjectData .insertPjTitle{
+    padding-left: 25px;
+}
+#insertProjectData .insertPjmcount{
+    padding-left: 25px;
+}
+#insertProjectData .insertPjDate{
+    padding-left: 40px;
+}
+.insertBtcBox{
+    width: 130px;
+    margin-left: 36%;
+    margin-top: 20px;
+}
+
+

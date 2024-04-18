@@ -1,0 +1,44 @@
+{{>employee/employeeTop}}
+
+
+
+    <div id="k_employee">
+        <div class="k_emainTop">
+            <select onchange="onPartPrint()" class="key">
+                <option value="0">전체</option>
+                <option value="1">인사과</option>
+                <option value="2">영업부</option>
+                <option value="3">프로그래머</option>
+            </select>
+
+            <div><input type="text" class="keyword k_main" name="k_keyword"  onkeyup="onPartPrint()"></div>
+            <button type="button"  onclick="onPartPrint()">검색</button>
+        </div>
+        <table>
+            <thead>
+                <tr>
+
+                    <th>사원번호</th>
+                    <th>이름</th>
+                    <th>부서</th>
+                    <th>전화번호</th>
+                    <th>입사날짜</th>
+                </tr>
+            </thead>
+            <tbody id="k_eList">
+
+            </tbody>
+        </table>
+        사원 목록
+
+        <!--페이지네이션-->
+        <nav aria-label="Page navigation example">
+            <ul class="pagination pagination-sm">
+
+            </ul>
+        </nav>
+    </div>
+
+<script src="/js/employee/employee.js"></script>
+
+{{>employee/employeeBottom}}

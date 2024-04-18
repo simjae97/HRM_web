@@ -1,0 +1,18 @@
+#k_container{
+    margin: 0 auto;
+    width: 960px;
+    height: 550px;
+    border: 1px solid green;
+    display: flex;
+}
+#k_employeeSideWrap{
+    width: 170px;
+    height: 550px;
+    border: 1px solid green;
+}
+#k_employeeSide{
+    margin: 50px auto;
+    padding: 0;
+    width: 130px;
+    border: 1px solid green;
+}

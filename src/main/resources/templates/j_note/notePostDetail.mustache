@@ -1,0 +1,19 @@
+{{>j_note/noteTop}}
+
+<div id="noteDetailWrap">
+    <h3>보낸쪽지</h3>
+    <div>받은사람 : <span class="sendid"></span></div>
+    <div>전송일 : <span class="ndate"></span></div>
+    <div class="ncontent"></div>
+    <button type="button" onclick="location.href='/note/receive'">보낸쪽지보기</button>
+
+    <!--답장 area-->
+    <div class="replyInput"></div>
+
+    <!--original note-->
+    <div class="originalNote"></div>
+</div>
+
+
+<script src="/js/j_note/notePostDetail.js"></script>
+{{>j_note/noteBottom}}

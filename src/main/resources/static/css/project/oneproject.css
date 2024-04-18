@@ -1,0 +1,8 @@
+table{
+    width:750px;
+}
+
+.buttons {
+    text-align: right; /* 버튼들을 오른쪽으로 이동시킴 */
+}
+

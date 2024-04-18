@@ -1,0 +1,78 @@
+{{>employee/employeeTop}}
+
+    <div id="k_employee" class="k_employee">
+        <div class="section">
+            <form class="employeeForm1">
+                <div class="section">
+                    <!-- <div class="label"> 아이디 </div>
+                     <input onkeyup="idCheck()" type="text" id="id" name="id" />
+                     <div class="idcheckbox checkbox">유효성검사결과</div>
+         -->        <div class="k_ViewImg" id="img" name="img"></div>
+                    <div >사진 수정</div>
+                    <input onchange="" type="file" id="mfile" name="mfile" /><br/>
+                    <!--<div class="preimgbox"> &lt;!&ndash; 첨부파일 미리보기&ndash;&gt;
+                        <img id="preimg" src="/img/default.jpg"/>
+                    </div>-->
+                    <div >이름</div>
+                    <input class="k_input" type="text" id="ename" name="ename"><br/>
+                    <div >아이디</div>
+                    <input class="k_input" type="text" id="id" name="id"><br/>
+                    <div >비밀번호</div>
+                    <input class="k_input" type="text" id="pw" name="pw"><br/>
+                    <div>부서 배정</div>
+                    <select class="pnoCategory k_input" id="pno" name="pno">
+                    </select>
+                    <div >성별</div>
+                    <input type="radio" id="sex" name="sex" value="false" checked> 남성
+                    <input type="radio" id="sex" name="sex" value="true"> 여성 <br/>
+
+
+                </div>
+
+                <div class="section">
+
+                    <div >입사 날짜</div>
+                    <div  id="start_date"></div>
+                    수정:<input class="k_input" type="date" id="edate" name="edate"><br/>
+
+                    <div>학력</div>
+                    <select class="k_input" id="eeducation" name="eeducation">
+                        <option>고졸</option>
+                        <option>초대졸</option>
+                        <option>대졸</option>
+                        <option>석사</option>
+                        <option>박사</option>
+                    </select>
+
+                    <div >전화번호</div>
+                    <input class="k_input" type="text" id="phone" name="phone"><br/>
+
+                    <div >주소</div>
+                    <input class="k_input" type="text" id="address" name="address"><br/>
+
+                    <div>이메일</div>
+                    <div >
+                        <input class="k_input" type="text" id="email" name="email"><br/>
+                    </div>
+
+
+                </div>
+                <div>
+                    <button class="k_eUB" type="button" onclick="onUpdate()">수정완료</button>
+                    경력사항
+                    <div class="careerBox"></div>
+                    <!--<button onclick="OnCareerPlus()" type="button">경력 편집</button>
+                    <button onclick="OnCareer()" type="button">경력 등록</button>
+        -->
+                    자격증
+                    <div class="licenseBox"></div>
+                </div>
+
+            </form>
+        </div>
+
+    </div>
+
+<script src="/js/employee/employeeUpdate.js"></script>
+
+{{>employee/employeeBottom}}

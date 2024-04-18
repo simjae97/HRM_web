@@ -1,0 +1,21 @@
+{{>mypages/mypageTop}}
+            <h3> 사원 정보 수정 페이지 </h3>
+            이름 : <input class="name" type="text" id="test" value="" disabled /> <br/>
+            이메일 : <input class="email" type="text" id="test" value="" /> <br/>
+            전화번호 : <input class="phone" type="text" id="test" value="" /> <br/>
+            주소 : <input class="address" type="text" id="test" value="" /> <br/>
+
+            <button onclick="mypageUpdate()" type="button">개인정보 수정</button> <br/>
+
+            Password : <input class="pw" type="text" id="test" value="" /> <br/>
+            New Password : <input class="newpw" type="text" id="test" value="" /> <br/>
+
+            <button onclick="mypageUpdatePw()" type="button">비밀번호 수정</button> <br/>
+        <div class="p_UbtnBox">
+            <button onclick="#" type="button"><a href="/mypage">뒤로</a></button>
+        </div>
+
+
+<script src="/js/mypages/loginCheck.js"></script> <!-- 로그인 체크 js -->
+<script src="/js/mypages/mypageUpdate.js"></script>
+{{>mypages/mypageBottom}}

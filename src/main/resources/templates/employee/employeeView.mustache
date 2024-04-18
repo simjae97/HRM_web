@@ -1,0 +1,88 @@
+{{>employee/employeeTop}}
+
+
+    <div id="k_employee">
+        <div class="eViewTop">
+            <button type="button" onclick="employeeUpdate()">정보수정</button>
+            <button type="button" onclick="onEmployeeDelete()">퇴사처리</button>
+        </div>
+        <div class="contentWrapper">
+            <div class="basicInfo">
+                <div class="img"></div>
+                부서명:<span class="pname"></span><br/>
+                이름:<span class="ename"></span><br/>
+                성별 :<span class="sex"></span><br/>
+                입사일:<span class="edate"></span><br/>
+                전화번호:<span class="phone"></span><br/>
+                이메일:<span class="email"></span><br/>
+                주소:<span class="address"></span><br/>
+            </div>
+
+            <div class="careerAndLicense">
+                <div class="careerInfo">
+                    경력사항
+                    <button onclick="OnCareerPlus()" type="button">경력 추가</button>
+                    <div class="careerSum">여기</div>
+
+                    <!--<button onclick="OnCareerPlus()" type="button">경력 편집</button>
+                    <button onclick="OnCareer()" type="button">경력 등록</button>
+        -->         <div class="table">
+                        <div class="thead">
+                            <div class="tr">
+                                <div class="th">회사명</div>
+                                <div class="th">입사날짜</div>
+                                <div class="th">퇴사날짜</div>
+                                <div class="th">담당업무</div>
+                                <div class="th">경력증명서</div>
+                            </div>
+                        </div>
+
+                        <div class="tbody careerBox">
+
+                            <!-- <tr>
+                                 <td><input type="text"></td>
+                                 <td><input type="date"></td>
+                                 <td><input type="date"></td>
+                                 <td><input type="text"></td>
+                                 <td><input type="file"></td>
+                             </tr>-->
+                        </div>
+                    </div>
+
+                    <div class="cBtn">
+
+                    </div>
+                </div>
+
+                <div class="licenseInfo">
+                    자격증
+                    <button onclick="OnLicensePlus()" type="button">자격증 추가</button>
+                    <div class="table">
+                        <div class="thead">
+                            <div class="tr">
+                                <div class="th">자격증명</div>
+                                <div class="th">취득일</div>
+                            </div>
+
+                        </div>
+                        <div class="tbody licenseBox">
+                            <!-- <tr>
+                                 <td>
+                                   <select>
+                                       <option value="${license.lno}">${license.lname}</option>
+                                   </select>
+                               </td>
+                                <td><input type="date"></td>
+                            </tr>-->
+                        </div>
+                        <div class="lBtn">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="/js/employee/employeeView.js"></script>
+
+{{>headerfooter/footer}}

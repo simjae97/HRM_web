@@ -1,0 +1,32 @@
+{{>j_projectPage/projectTop}}
+
+<form id="insertProjectData">
+        <div class="insertPjDate"><span>시작날짜 :</span> <input type="date" class="insert_start_date" name="start_date" /> </div>
+        <div class="insertPjDate"><span>종료날짜 :</span> <input type="date" class="insert_end_date" name="end_date" /> </div>
+        <div class="insertPjmcount"><span>고급인원수 : </span><input type="number" class="insert_rank1_count" name="rank1_count" value="0" /> </div>
+        <div class="insertPjmcount"><span>중급인원수 : </span><input type="number" class="insert_rank2_count" name="rank2_count" value="0"/> </div>
+        <div class="insertPjmcount"><span>초급인원수 : </span><input type="number" class="insert_rank3_count" name="rank3_count" value="0"/> </div>
+        <div class="insertPjText insertPjTitle"><span>프로젝트명 : </span><input class="insert_title" name="title" /> </div>
+        <div class="insertPjText insertPjCname"><span>사업체명 :</span> <input class="insert_compannyname" name="compannyname" /> </div>
+        <div class="insertPjState"><span>진행현황 :</span>
+            <select class="insert_state" name="state">
+                <option value="-1"> 영업중 </option>
+                <option value="0"> 진행전 </option>
+                <option value="1"> 진행중 </option>
+                <option value="2"> 진행완료 </option>
+            </select>
+        </div>
+        <div class="insertPjPrice"><span>규모(계약금액) : </span><input class="insert_price" name="price" /> </div>
+        <div><span>요청사항 </span><br/><textarea class="insert_request" name="request" ></textarea> </div>
+        <div><span>비고 </span><br/><textarea class="insert_note" name="note" > </textarea></div>
+</form>
+
+<div class="insertBtcBox">
+    <button type="button" onclick="insertProject()">등록</button>
+    <button type="button" onclick="backList()">취소</button>
+</div>
+
+
+<script src="/js/j_projectPage/insertProject.js"></script>
+
+{{>j_projectPage/projectBottom}}

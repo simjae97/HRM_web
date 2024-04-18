@@ -1,0 +1,40 @@
+{{>salary/h}}
+
+<span class="totalPage"></span>
+<span class="totalBoardSize"></span>
+<div class="catebtn">
+<!--    <button class="boardBtn  ${pageObject.bcno == 0? 'usecate' : '' }" onclick="onBcno(0)" type="button">전체보기</button>-->
+<!--    <button class="boardBtn  ${pageObject.bcno == 1? 'usecate' : '' }" onclick="onBcno(1)" type="button">자유</button>-->
+<!--    <button class="boardBtn  ${pageObject.bcno == 2? 'usecate' : '' }" onclick="onBcno(2)" type="button">노하우</button>-->
+</div>
+
+<table>
+    <thead>
+    <tr>
+        <th >번호</th>
+        <th >사원이름</th>
+        <th >지급일자</th>
+        <th >만원</th>
+    </tr>
+    </thead>
+    <tbody id="boardTableBody">
+    </tbody>
+</table>
+<!--페이지네이션-->
+<nav aria-label="Page navigation example">
+    <ul class="pagination">
+        <li class="page-item disabled">
+            <a class="page-link">이전</a>
+        </li>
+        <li class="page-item"><a class="page-link" onclick="doViewList(1)">1</a></li>
+        <li class="page-item"><a class="page-link" onclick="doViewList(2)">2</a></li>
+        <li class="page-item"><a class="page-link" onclick="doViewList(3)">3</a></li>
+        <li class="page-item">
+            <a class="page-link" href="#">다음</a>
+        </li>
+    </ul>
+</nav>
+</div>
+
+<script src="/js/salary/salaryloglist.js"></script>
+{{>salary/f}}

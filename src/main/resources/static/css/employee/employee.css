@@ -1,0 +1,177 @@
+#login_div{
+    margin:0 auto;
+    margin-top: 10px;
+    height:450px;
+    display:flex;
+    justify-content: center;
+    align-items: center
+}
+#login_div div *{
+    margin : 5px;
+}
+#all_login{
+    display: flex; flex-direction: column;
+}
+#login_input{
+    display: flex; flex-direction: column;
+
+}
+
+
+#login_div button{
+    margin-left:170px
+}
+
+        /* 버튼 그룹 스타일 */
+        .buttonGroup {
+            text-align: right; /* 오른쪽 정렬 */
+        }
+
+        /* 내용을 가로로 나누는 wrapper 스타일 */
+        .contentWrapper {
+            display: flex; /* Flexbox 사용 */
+
+        }
+
+        /* 기본 정보 스타일 */
+        .basicInfo {
+            flex: 1; /* 자동으로 나머지 공간을 채움 */
+            padding-right: 20px; /* 오른쪽 여백 추가 */
+        }
+
+        /* 경력 및 자격증 스타일 */
+        .careerAndLicense {
+            flex: 1; /* 자동으로 나머지 공간을 채움 */
+            padding-left: 20px; /* 왼쪽 여백 추가 */
+        }
+
+        /* 경력 정보 스타일 */
+        .careerInfo {
+            /* 경력 정보 스타일링 */
+        }
+
+        /* 자격증 정보 스타일 */
+        .licenseInfo {
+            /* 자격증 정보 스타일링 */
+        }
+        .tr {
+            display: flex; /* 가로로 나열하도록 설정 */
+            width:510px;
+        }
+        .td.cinput >input {
+            width:85;
+        }
+        .th {
+            flex: 1; /* 각 열이 동일한 너비를 가지도록 설정 */
+        }
+        .td {
+            flex: 1; /* 각 열이 동일한 너비를 가지도록 설정 */
+        }
+ .container {
+        display: flex;
+    }
+    .employeeForm{
+        display:flex;
+        border: 1px solid #ccc;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        margin:0 auto;
+
+    }
+    .section {
+        width: 250px; /* 가로 이등분 */
+        padding-top: 10px;
+        padding-right: 3px;
+
+    }
+
+
+
+    .section:last-child {
+        margin-right: 5px; /* 두 번째 섹션 왼쪽 마진 */
+    }
+
+    .section div {
+        margin-bottom: 5px;
+    }
+    .k_login{
+            padding: 5px !important;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            width: 93% !important;
+    }
+    /*input[type="text"], input[type="date"], select {
+        padding: 3px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        width: 130px;
+    }
+
+    input[type="radio"] {
+        margin-right: 5px;
+    }*/
+
+    button {
+        padding: 8px 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-left:5px;
+    }
+
+    button:hover {
+        background-color: #0056b3;
+    }
+    .ename1 {
+        margin-top: 20;
+    }
+
+.eViewTop {
+        text-align: right; /* 텍스트 오른쪽 정렬 */
+    }
+
+    .eViewTop button {
+        margin-left: 10px; /* 버튼 간격 설정 */
+        margin-top: 10px; /* 버튼 간격 설정 */
+    }
+
+.k_ViewImg{
+    width: 100px;
+    height: 100px;
+    /*position: absolute;
+    top: 0px;
+    left: 430px;*/
+}
+.k_ViewImg > img{
+    width: 100px;
+    height: 100px;
+    object-fit:cover;
+}
+.employeeForm1 {
+    display:flex;
+}
+.k_input{
+    padding: 3px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        width: 130px;
+}
+
+.k_eUB {
+
+    margin-top: 10px; /* 상단 여백 설정 */
+    width: 60px;
+}
+.k_emainTop{
+margin-top:5px;
+display:flex;
+}
+.k_emainTop > select,  input, button{
+    margin:3px;
+    height:24px;
+}
+.k_main{
+    padding: 0 !important;
+}

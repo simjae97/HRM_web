@@ -1,0 +1,51 @@
+{{>j_projectPage/projectTop}}
+<select class="searchCategory" onchange="searchProject()">
+    <option value="0">전체</option>
+    <option value="1">프로젝트명</option>
+    <option value="2">회사명</option>
+    <option value="3">규모</option>
+    <option value="4">상태</option>
+    <option value="5">시작일</option>
+    <option value="6">종료일</option>
+</select>
+
+<span class="searchInput">
+
+</span>
+<button type="button" onclick="onSearch()">검색</button>
+
+<select class="sortStandard" onchange="sortProject()">
+    <option value="0">시작날짜 빠른순</option>
+    <option value="1">규모 적은순</option>
+    <option value="2">필요인원 적은순</option>
+</select>
+
+<!--프로젝트 전체 출력-->
+<table>
+    <thead>
+    <tr>
+        <th>no.</th>
+        <th>프로젝트명</th>
+        <th>회사명</th>
+        <th>규모</th>
+        <th>필요인원</th>
+        <th>상태</th>
+        <th>시작일</th>
+        <th>종료일</th>
+    </tr>
+    </thead>
+
+    <tbody id="projectList">
+
+    </tbody>
+</table>
+
+<!--페이지네이션-->
+<nav aria-label="Page navigation example">
+    <ul class="pagination pagination-sm">
+
+    </ul>
+</nav>
+
+<script src="/js/sales/saleslist.js"></script>
+{{>j_projectPage/projectBottom}}
